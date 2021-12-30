@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/urna.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="opcoes">
+        <div class="brasao"><img src="img/brasao2.png" alt=""></div>
+
+        <div class="opcaoVereador">
+            <p>Candidatos elegíveis a VEREADOR:</p>
+            
+            <div class="candidato">
+            Bernado Silva<br>
+            Número: 38111<br>
+            Partido: Verde
+            </div><div class='candidato'>
+            Maria Santos<br>
+            número: 77222<br>
+            partido: Amarelo
+            </div>
+
+            <div class='candidato'>
+                Rafael Gomes <br>
+                Número: 95333<br>
+                Partido: Vermelho
+            </div><div class='candidato'>
+                Fernanda Ribeiro<br>
+                Número: 66444<br>
+                Partido: Rosa
+            </div>
+        </div>
+        
+        <div class="opcaoPrefeito">
+            <p>Candidatos elegíveis a PREFEITO:</p>
+            <div class='candidato'> 
+                José Pereira<br>
+                Número: 99<br>
+                Partido: Azul<br>
+                Vice: Renata Borges
+            </div><div class='candidato'>
+                Fabiana Moraes<br>
+                Número: 84<br>
+                Partido: Roxo<br>
+                Vice: Pedro de Souza
+            </div>
+        </div>
+    </div>
+
+
+    <div class='urna'>
+    <!-- TELA --> 
+        <div class='tela'>
+            
+            <div class='d1'>
+
+                <div class='d1-left'>
+                    <div class ="msg">
+                        <span>SEU VOTO PARA</span>
+                    </div>
+                    <div class='cargo'>
+                        <span>VEREADOR</span>
+                    </div>
+                    <div class='numero'>
+                        <div class='digito pisca'></div>
+                        <div class='digito'></div>
+                    </div>
+                    <div class='infos'>
+                        Nome: FULAMO DE TAL <br>
+                        Partido: QQQ <br>
+                        Viçe-Prefeito: BELTRANO DE TAL
+                    </div>
+                </div>
+
+                <div class='d1-right'>
+                    <div class='d1-image'>
+                        <img src='img/84.jpg' alt='' >
+                        Prefeito
+                    </div>
+                    <div class='d1-image small'>
+                        <img src='img/84.jpg' alt=''>
+                        Vice-Prefeito
+                    </div>
+                </div>
+
+            </div>
+
+            <div class='d2'>
+                <p>Aperte a tecla:</p> 
+                <p>CONFIRMA para CONFIRMAR este voto </p>
+                <p>CORRIGE para REINICIAR este voto</p>
+            </div>
+
+        </div>
+
+<!-- TECLADO -->
+        <div class='teclado'>
+
+            <div class='teclado-linha'>
+               <div class='teclado-botao' onclick="clicou('1')">1</div>
+               <div class='teclado-botao' onclick="clicou('2')">2</div>
+               <div class='teclado-botao' onclick="clicou('3')">3</div>
+            </div>
+
+            <div class='teclado-linha'>
+                <div class='teclado-botao' onclick="clicou('4')">4</div>
+                <div class='teclado-botao' onclick="clicou('5')">5</div>
+                <div class='teclado-botao'onclick="clicou('6')" >6</div>
+            </div>
+
+            <div class='teclado-linha'>
+                <div class='teclado-botao' onclick="clicou('7')">7</div>
+                <div class='teclado-botao' onclick="clicou('8')">8</div>
+                <div class='teclado-botao' onclick="clicou('9')">9</div>
+            </div>
+
+            <div class='teclado-linha'>
+                <div class='teclado-botao' onclick="clicou('0')">0</div>
+            </div>
+
+            <div class='teclado-linha'>
+                <div class='teclado-botao botao-branco' onclick= "branco()">BRANCO</div>
+                <div class='teclado-botao botao-corrige' onclick= "corrige()">CORRIGE</div>
+                <div class='teclado-botao botao-confirma' onclick= "confirma()">CONFIRMA</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="etapas.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

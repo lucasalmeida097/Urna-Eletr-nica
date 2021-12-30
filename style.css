@@ -1,0 +1,194 @@
+@charset "UTF-8";
+@keyframes pisca {
+    0% {opacity:0.2;}
+    50% {opacity:1;}
+    100%{opacity:0.2;}
+}
+
+body {
+    margin:0;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #c2bfbf
+}
+
+/* Opções de candidatos */
+
+.opcoes {
+    border: 2px solid #000000;
+    width:390px;
+    margin: 50px 20px;
+    background-color:#bfbfe0;
+    font:normal medium 16px Arial, Helvetica, sans-serif;
+}
+.opcoes p {
+    padding-left: 20px;
+    font-weight:bold; 
+}
+.brasao{
+    flex:center;
+    width: 90%;
+}
+.candidato {
+   padding: 10px 20px;
+   display:inline-block;
+}
+
+
+
+.urna {
+    background-color:#dbd5c9;
+    padding:30px;
+    display:flex;
+}
+
+
+
+/* Estilização da TELA */
+.tela {
+    width:500px;
+    height: 320px;
+    background: linear-gradient(to right, #E8E8E8, #C1C1C1);
+    border: 2px solid #555;
+    display:flex;
+    flex-direction:column;
+}
+/* .brasao {
+    display:block;
+} */
+.d1 {
+    flex:1;
+    display:flex;
+}
+.d1-left {
+    flex:1;
+    display: flex;
+    flex-direction:column;
+    padding-left:20px;
+}
+.msg {
+    height: 50px;
+    display:flex;
+    align-items:center;
+}
+.cargo {
+    height: 50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+}
+.numero {
+    height: 50px;
+    display:flex;
+    align-items:center;  
+}
+
+.digito {
+    display:inline-block;
+    width:30px ;
+    height: 40px;
+    border: 1px solid #000000;
+    text-align:center;
+    line-height:40px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.pisca {
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count:infinite;
+}
+.infos {
+    flex:1;
+    line-height: 30px;
+}
+.d1-right {
+    width:90px;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+.d1-image {
+    border: 1px solid #000000;
+    background-color:#FFFFFF;
+    text-align:center;
+    font-size:13px;
+}
+.d1-image > img {
+    width:100%;
+}
+.d1-image.small{
+    width: 80%;
+    margin-top:8px;
+    font-size:12px;
+}
+
+.d2 {
+    height:50px;
+    border-top: 2px solid #000000;
+    padding:5px;  
+}
+.d2 > p {
+    margin: 0;
+    font-size: 15px 
+}
+.aviso-grande {
+    font: normal bold 40px Arial,helvetica,sans-serif;
+    text-align: center;
+    margin-top: 20px; 
+}
+.aviso-gigante{
+    text-align: center;
+    font: normal bold 40px Arial,Helvetica,sans-serif;
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Estilização do TECLADO */
+
+.teclado {
+    background-color:#403A3A;
+    margin-left:30px; 
+}
+.teclado-linha {
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+}
+.teclado-botao {
+    width:70px;
+    height:40px;
+    background-color:#000000;
+    color:#FFFFFF;
+    font-size:25px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:10px;
+    cursor:pointer;
+    box-shadow:3px 3px 0 #555;
+}
+.botao-branco {
+    background-color:#FFFFFF;
+    color:#000000c0;
+    font: normal bold 14px Arial, Helvetica, sans-serif;
+}
+.botao-corrige {
+    background-color:#F09046;
+    color:#000000c0;
+    font: normal bold 14px Arial, Helvetica, sans-serif;
+}
+.botao-confirma {
+    background-color:#48C079;
+    color:#000000c0;
+    width:90px;
+    height: 50px;
+    font: normal bold 15px Arial, Helvetica, sans-serif;
+}
